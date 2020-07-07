@@ -7,6 +7,9 @@ verify_ssl = true
 
 [packages]
 streamlit = "*"
+pandas = "*"
+numpy = "*"
+plotly = "*"
 
 [requires]
 python_version = "3.7"
