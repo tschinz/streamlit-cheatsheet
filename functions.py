@@ -20,7 +20,6 @@ import plotly as ply
 import plotly.io as pio
 import plotly.graph_objs as go
 import plotly.figure_factory as ff
-ply.offline.init_notebook_mode(connected=True)
 
 # streamlit
 import streamlit as st
