@@ -8,12 +8,16 @@
 # Import sub-modules
 # python
 import os
-
+import time
+import datetime
 # pandas
 import pandas as pd
 
 # numpy
 import numpy as np
+
+# images
+from PIL import Image
 
 # plotly
 import plotly as ply
@@ -26,6 +30,7 @@ import streamlit as st
 
 # local project imports
 from config import *
+
 
 def createDir(directory, verbose=0):
   """Checks if directory exists, and creates it if not
@@ -49,6 +54,10 @@ def createDir(directory, verbose=0):
 ###############################################################################
 # Custom Import Functions
 #
+def getData(dir, file):
+  path = dir + os.sep + file
+  df = pd.read_csv(path, delimiter=";")
+  return df
 
 ###############################################################################
 # Pandas Functions

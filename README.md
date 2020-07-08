@@ -32,7 +32,8 @@ pipenv install
 
 #### Launch locally
 ```python
-pipenv run streamlit run app.py
+pipenv shell
+streamlit run app.py
 ```
 
 ## Credits

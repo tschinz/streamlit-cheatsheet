@@ -10,6 +10,7 @@ streamlit = "*"
 pandas = "*"
 numpy = "*"
 plotly = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
